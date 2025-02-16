@@ -32,6 +32,16 @@ class LoginRequest extends FormRequest
         ];
     }
 
+    public function messages()
+    {
+        return [
+            "email.required" => "El email es obligatorio",
+            "email.email" => "El email no es válido",
+            "email.exists" => "El email no existe",
+            "password.required" => "La contraseña es obligatoria",
+        ];
+    }
+
     /**
      * Attempt to authenticate the request's credentials.
      *
