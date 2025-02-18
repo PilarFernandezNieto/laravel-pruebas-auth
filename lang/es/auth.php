@@ -4,17 +4,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Authentication Language Lines
+    | Líneas de Lenguaje de Autenticación
     |--------------------------------------------------------------------------
     |
-    | The following language lines are used during authentication for various
-    | messages that we need to display to the user. You are free to modify
-    | these language lines according to your application's requirements.
+    | Las siguientes líneas de lenguaje se utilizan durante la autenticación para
+    | varios mensajes que necesitamos mostrar al usuario. Puedes modificar estas
+    | líneas de lenguaje según los requisitos de tu aplicación.
     |
     */
 
-        'failed' => 'Las credenciales no son correctas.',
-        'password' => 'La contraseña no es correcta.',
-        'throttle' => 'Demasiados intentos de inicio de sesión. Por favor, inténtalo de nuevo en :seconds segundos.',
+    'failed' => 'Las credenciales no son correctas.',
+    'password' => 'La contraseña no es correcta.',
+    'throttle' => 'Demasiados intentos de inicio de sesión. Por favor, inténtalo de nuevo en :seconds segundos.',
 
 ];
