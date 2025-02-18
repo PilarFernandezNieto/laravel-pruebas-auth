@@ -20,7 +20,7 @@ Route::post('/forgot-password', [PasswordResetLinkController::class, 'store'])
     ->middleware('guest')
     ->name('password.email');
 
-Route::post('/reset-password', [NewPasswordController::class, 'store'])
+Route::post('/reset-password', [NewPasswordController::class, 'store']) // Se añade auth al inicio de la ruta para que coincida con vue-router
     ->middleware('guest')
     ->name('password.store');
 

@@ -37,7 +37,10 @@ class RegisterRequest extends FormRequest
             "email.email" => "El email no es válido",
             "email.unique" => "El email ya está en uso",
             "password.required" => "La contraseña es obligatoria",
-            "password.confirmed"  => "Las contraseñas no coinciden"
+            "password.confirmed"  => "Las contraseñas no coinciden",
+            "password.min" => [
+                'string' => 'La contaseña debe tener al menos :min caracteres.',
+            ],
         ];
     }
 }
