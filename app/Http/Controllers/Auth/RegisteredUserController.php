@@ -38,7 +38,7 @@ class RegisteredUserController extends Controller
         // Respuesta
         return [
             'type' => 'success',
-            'mensaje' => 'Usuario creado correctamente'
+            'message' => 'Usuario creado correctamente'
         ];
     }
 }
