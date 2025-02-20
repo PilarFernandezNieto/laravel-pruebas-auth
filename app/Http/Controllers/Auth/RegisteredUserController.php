@@ -35,6 +35,15 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
+        // Comprobar si el usuario está autenticado
+        // if (Auth::check()) {
+        //     // Si está autenticado, devolver una respuesta positiva
+        //     return response()->json(['status' => 'Usuario autenticado correctamente.'], 200);
+        // } else {
+        //     // Si no está autenticado, devolver un error
+        //     return response()->json(['status' => 'Error en la autenticación.'], 400);
+        // }
+
         // Respuesta
         return [
             'type' => 'success',
