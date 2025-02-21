@@ -11,9 +11,9 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return [
-            "Desde admin"
-        ];
+        return response()->json([
+            "message" =>  "Desde admin"
+        ]);
     }
 
     /**
