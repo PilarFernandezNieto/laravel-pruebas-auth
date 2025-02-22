@@ -9,9 +9,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/user', function (Request 
     return $request->user();
 });
 
-Route::get("/", function () {
-    return "Hola Mundo";
-});
+
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::apiResource('/admin', AdminController::class);
 });
